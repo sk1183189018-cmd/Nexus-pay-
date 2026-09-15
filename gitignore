@@ -1,0 +1,237 @@
+# =========================================================
+# Nexus Pay
+# Git Ignore
+# =========================================================
+
+# ---------------------------------------------------------
+# Environment & Secrets
+# ---------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.secret
+*.secrets
+
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Private certificates / signing files
+*.jks
+*.keystore
+
+# ---------------------------------------------------------
+# Node.js
+# ---------------------------------------------------------
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+.pnp
+.pnp.js
+.pnp.cjs
+
+# ---------------------------------------------------------
+# Build Output
+# ---------------------------------------------------------
+
+dist/
+build/
+out/
+
+coverage/
+
+.cache/
+.parcel-cache/
+.metro-cache/
+.metro-health-check*
+
+.next/
+
+.tmp/
+tmp/
+temp/
+
+*.tmp
+*.temp
+*.bak
+*.old
+
+# ---------------------------------------------------------
+# React Native
+# ---------------------------------------------------------
+
+.expo/
+.expo-shared/
+
+*.jsbundle
+
+# Android generated files
+android/.gradle/
+android/.cxx/
+android/app/build/
+android/build/
+
+*.apk
+*.aab
+*.apks
+
+local.properties
+
+# Android signing
+android/app/*.keystore
+android/app/*.jks
+
+# ---------------------------------------------------------
+# iOS
+# ---------------------------------------------------------
+
+Pods/
+
+DerivedData/
+
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+*.xcuserstate
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# ---------------------------------------------------------
+# Database
+# ---------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+
+postgres-data/
+redis-data/
+
+# Database dumps
+*.dump
+*.sql.gz
+
+# ---------------------------------------------------------
+# Logs
+# ---------------------------------------------------------
+
+logs/
+*.log
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------
+# User / Runtime Data
+# ---------------------------------------------------------
+
+uploads/
+storage/
+user-data/
+
+runtime/
+sessions/
+
+# ---------------------------------------------------------
+# IDE
+# ---------------------------------------------------------
+
+.vscode/*
+
+# Keep shared VS Code configuration
+!.vscode/settings.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+
+*.swp
+*.swo
+
+# ---------------------------------------------------------
+# OS
+# ---------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+Desktop.ini
+
+# ---------------------------------------------------------
+# Testing
+# ---------------------------------------------------------
+
+test-results/
+playwright-report/
+blob-report/
+
+.nyc_output/
+
+# ---------------------------------------------------------
+# Docker
+# ---------------------------------------------------------
+
+docker-compose.override.yml
+
+# ---------------------------------------------------------
+# Terraform / Infrastructure
+# ---------------------------------------------------------
+
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# ---------------------------------------------------------
+# Security / Sensitive Files
+# ---------------------------------------------------------
+
+secrets/
+private/
+credentials/
+
+*.token
+*.jwt
+
+# Never commit real provider credentials
+service-account*.json
+firebase-adminsdk*.json
+
+# ---------------------------------------------------------
+# Upload / Payment Provider Temporary Files
+# ---------------------------------------------------------
+
+provider-cache/
+payment-cache/
+kyc-cache/
+webhook-cache/
+
+# ---------------------------------------------------------
+# Generated Documentation
+# ---------------------------------------------------------
+
+docs/generated/
+
+# ---------------------------------------------------------
+# Local configuration
+# ---------------------------------------------------------
+
+*.local
+config.local.*
